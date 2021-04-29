@@ -10,6 +10,12 @@ module.exports = {
         path: path.resolve(__dirname, 'dist'),
         filename: 'bundle.js'
     },
+    devServer: {
+        contentBase: [
+          path.join(__dirname, 'dist'),
+          path.join(__dirname, 'assets'),
+        ],
+    },
     module: {
         rules: [
             {
